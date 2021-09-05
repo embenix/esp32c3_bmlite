@@ -16,7 +16,7 @@ Interfacing the ESP32-C3-DevKitM-1 with BM-Lite fingerprint sensor from Fingerpr
 
 ### Hardware Reference:
 #### 1. The pinout of the ESP32-C3-DevKitM-1:
-<div align="center"> <img src="./Information/esp32-c3-devkitm-1-v1-pinout.jpg"/></div>
+<div align="center"> <img src="./information/esp32-c3-devkitm-1-v1-pinout.jpg"/></div>
 
 
 #### 2. Connection between Fingerprint sensor BM-Lite and ESP32-C3:
@@ -40,4 +40,4 @@ Please do read the following special notes in order to successfully build and te
 #### 1. BM-Lite SPI Interface
 When using the SPI interface, the UART RX signal should be held at a fixed state to avoid unintentional interference on the UART interface.
 
-<div align="center"><img src="./Information/note1_BM-Lite_spi_interface.jpg"/></div>
+<div align="center"><img src="./information/note1_BM-Lite_spi_interface.jpg"/></div>
