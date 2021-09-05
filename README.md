@@ -10,8 +10,8 @@ Interfacing the ESP32-C3-DevKitM-1 with BM-Lite fingerprint sensor from Fingerpr
 ## How to get started:
 ### Software Requirements:
 1. Install the ESP-IDF (Espressif IoT Development Framework) from Espressif. Follow the instructions [here](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/get-started/index.html#installation-step-by-step).
-2. Once the ESP-IDF is setup clone this repository by using git: `git clone --recursive https://github.com/ykqureshi/esp32c3_bmlite.git`
-3. Use `idf.py build` to build the project and `idf.py -p COMxx flash monitor` ( ** xx is the number of the COM port on your computer) to upload the firmware to the dev-kit. 
+2. Once the ESP-IDF is setup clone this repository by using git: `git clone --recursive https://github.com/embenix/esp32c3_bmlite.git`
+3. Use `idf.py build` to build the project and `idf.py -p COMxx flash monitor` ( **`xx`** is the number of the COM port on your computer) to upload the firmware to the dev-kit. 
 
 ### Hardware Reference:
 #### 1. The pinout of the ESP32-C3-DevKitM-1:
