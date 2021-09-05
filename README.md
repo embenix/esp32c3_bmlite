@@ -10,17 +10,19 @@ Interfacing the ESP32-C3-DevKitM-1 with BM-Lite fingerprint sensor from Fingerpr
 ## How to get started:
 ### Software Requirements:
 1. Install the ESP-IDF (Espressif IoT Development Framework) from Espressif. Follow the instructions [here](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/get-started/index.html#installation-step-by-step).
-2. Once the ESP-IDF is setup clone this repository by using git: `git clone --recursive https://github.com/ykqureshi/esp32c3_bmlite.git`
-3. Use `idf.py build` to build the project and `idf.py -p COMxx flash monitor` ( ** xx is the number of the COM port on your computer) to upload the firmware to the dev-kit. 
+2. Once the ESP-IDF is setup clone this repository by using git: `git clone --recursive https://github.com/embenix/esp32c3_bmlite.git`
+3. Use `idf.py build` to build the project and `idf.py -p COMxx flash monitor` to upload the firmware to the dev-kit. 
+> Note: **`xx`** is the number of the COM port on your computer
 
 ### Hardware Reference:
 #### 1. The pinout of the ESP32-C3-DevKitM-1:
-![](./Information/esp32-c3-devkitm-1-v1-pinout.jpg)
+<div align="center"> <img src="./Information/esp32-c3-devkitm-1-v1-pinout.jpg"/></div>
+
 
 #### 2. Connection between Fingerprint sensor BM-Lite and ESP32-C3:
 
 | BM-Lite IO Pins      | ESP32-C3 DevKit    |
-|----------------------|--------------------|
+|:---------------------|:-------------------|
 | 01- GND              | GND                |
 | 02- SPICLK           | GPIO6              |
 | 03- MISO             | GPIO2              |
@@ -38,4 +40,4 @@ Please do read the following special notes in order to successfully build and te
 #### 1. BM-Lite SPI Interface
 When using the SPI interface, the UART RX signal should be held at a fixed state to avoid unintentional interference on the UART interface.
 
-![](./Information/note1_BM-Lite_spi_interface.jpg)
+<div align="center"><img src="./Information/note1_BM-Lite_spi_interface.jpg"/></div>
