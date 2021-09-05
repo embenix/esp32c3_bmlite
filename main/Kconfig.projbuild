@@ -1,0 +1,70 @@
+menu "BM-Lite Project Configuration"
+
+    config TX_GPIO_NUM
+        int "TX GPIO number"
+        default 2 if IDF_TARGET_ESP32C3
+        default 20 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+        default 21 if IDF_TARGET_ESP32
+        help
+            This option selects the GPIO pin used for the TX signal. Connect the
+            TX signal to your transceiver.
+
+    config RX_GPIO_NUM
+        int "RX GPIO number"
+        default 3 if IDF_TARGET_ESP32C3
+        default 21 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+        default 22 if IDF_TARGET_ESP32
+        help
+            This option selects the GPIO pin used for the RX signal. Connect the
+            RX signal to your transceiver.
+    
+    config RMT_TX_GPIO
+        int "RMT TX GPIO"
+        default 8
+        help
+            Set the GPIO number used for transmitting the RMT signal.
+
+    config STRIP_LED_NUMBER
+        int "Number of LEDS in a strip"
+        default 1
+        help
+            A single RGB strip contains several LEDs.
+        
+    config FPC_RSTN_GPIO
+        int "FPC BM-Lite RSTN GPIO"
+        default 3
+        help
+            This option selects GPIO pin for RESET signal of the BM-Lite module.
+            This signal is active LOW.
+        
+    config FPC_MOSI_GPIO
+        int "FPC BM-Lite MOSI GPIO"
+        default 7
+        help
+            This option selects GPIO pin for MOSI signal of the BM-Lite module.
+
+    config FPC_MISO_GPIO
+        int "FPC BM-Lite MISO GPIO"
+        default 2
+        help
+            This option selects GPIO pin for MISO signal of the BM-Lite module.
+
+    config FPC_SCK_GPIO
+        int "FPC BM-Lite SCK GPIO"
+        default 6
+        help
+            This option selects GPIO pin for SCK signal of the BM-Lite module.
+
+    config FPC_CS_GPIO
+        int "FPC BM-Lite CS GPIO"
+        default 10
+        help
+            This option selects GPIO pin for CS (chip select) signal of the BM-Lite module.
+
+    config FPC_IRQ_GPIO
+        int "FPC BM-Lite IRQ GPIO"
+        default 1
+        help
+            This option selects GPIO pin for MOSI signal of the BM-Lite module.
+
+endmenu
