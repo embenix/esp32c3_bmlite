@@ -1,5 +1,6 @@
 # ESP32C3 BM-Lite
 Interfacing the ESP32-C3-DevKitM-1 with BM-Lite fingerprint sensor from Fingerprint AB.
+> Note: This is the work still in progress. However, the fingerprint sensor is initialized and helping functions work just fine.
 
 ## Product Links
 1. [ESP32-C3-DevKitM-1](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/hw-reference/esp32c3/user-guide-devkitm-1.html "ESP32-C3-DevKitM-1")
